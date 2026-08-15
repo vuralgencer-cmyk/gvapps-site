@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GV Apps — Playful, privacy-first apps</title>
+<meta name="description" content="GV Apps is a small studio building playful, privacy-first mobile apps for kids and families.">
+<style>
+  :root { color-scheme: light dark; --purple:#6a3fb3; --blue:#4f7fe0; --bg:#faf7ff; --fg:#1f2330; --card:#ffffff; --muted:#5b5b6b; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#100e18; --fg:#e9e7f2; --card:#1b1826; --muted:#a09db2; } }
+  * { box-sizing: border-box; }
+  html,body { margin:0; }
+  body {
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--fg); background:var(--bg); line-height:1.6;
+    min-height:100vh; display:flex; flex-direction:column;
+  }
+  a { color:var(--purple); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  .wrap { width:100%; max-width:720px; margin:0 auto; padding:0 22px; }
+  header { padding:26px 0; }
+  .logo { font-weight:800; font-size:20px; letter-spacing:.2px;
+    background:linear-gradient(90deg,var(--purple),var(--blue)); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  main { flex:1; }
+  .hero { padding:48px 0 12px; }
+  .hero h1 { font-size:34px; line-height:1.2; margin:0 0 12px; letter-spacing:-.5px; }
+  .hero p { font-size:18px; color:var(--muted); margin:0; max-width:52ch; }
+  .section-label { font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:1px; color:var(--muted); margin:56px 0 14px; }
+  .app {
+    display:flex; align-items:center; gap:18px; background:var(--card);
+    border-radius:20px; padding:20px; box-shadow:0 8px 30px rgba(106,63,179,.10);
+  }
+  .app img { width:72px; height:72px; border-radius:18px; flex-shrink:0; }
+  .app h2 { margin:0 0 4px; font-size:20px; }
+  .app p { margin:0 0 8px; color:var(--muted); font-size:15px; }
+  .badge { display:inline-block; font-size:12px; font-weight:700; color:var(--purple);
+    background:rgba(106,63,179,.12); padding:3px 10px; border-radius:999px; }
+  .links { margin-top:10px; font-size:14px; }
+  .links a { margin-right:14px; }
+  footer { padding:40px 0; color:var(--muted); font-size:14px; border-top:1px solid rgba(128,128,128,.15); margin-top:56px; }
+  footer .row { display:flex; flex-wrap:wrap; gap:10px 20px; justify-content:space-between; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header><span class="logo">GV Apps</span></header>
+    <main>
+      <section class="hero">
+        <h1>Playful apps,<br>designed with privacy in mind.</h1>
+        <p>GV Apps is a small independent studio building simple, delightful mobile
+        apps for kids and families — with no ads, no tracking, and no data collection.</p>
+      </section>
+
+      <div class="section-label">Our apps</div>
+      <div class="app">
+        <img src="assets/klikaboo.png" alt="Klikaboo icon">
+        <div>
+          <h2>Klikaboo</h2>
+          <p>A safe, ad-free camera with fun filters, frames and AR masks for kids.
+          Photos stay on the device. Parental controls built in.</p>
+          <span class="badge">Coming soon</span>
+          <div class="links">
+            <a href="/klikaboo/privacy">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="row">
+        <span>© 2026 GV Apps</span>
+        <span><a href="mailto:destek@gvapps.dev">destek@gvapps.dev</a></span>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
