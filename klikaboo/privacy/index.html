@@ -43,7 +43,7 @@
   <!-- ================= TÜRKÇE ================= -->
   <section id="tr">
     <h1>Gizlilik Politikası</h1>
-    <div class="muted">Son güncelleme: 16 Ağustos 2026</div>
+    <div class="muted">Son güncelleme: 19 Eylül 2026</div>
 
     <div class="card tldr">
       Kısaca: Klikaboo <b>hiçbir kişisel veri toplamaz, saklamaz veya paylaşmaz.</b>
@@ -70,8 +70,24 @@
       </ul>
 
       <h2>Yüz algılama (AR filtreleri)</h2>
-      <p>AR yüz filtreleri, cihaz üzerinde çalışan yüz algılama teknolojisi kullanır. Yüz
-      verileri yalnızca o an, cihazda işlenir; <b>saklanmaz ve hiçbir yere gönderilmez.</b></p>
+      <p>AR yüz filtreleri (maskeler), cihaz üzerinde çalışan yüz landmark algılama
+      teknolojisi (MediaPipe Face Mesh) kullanır. İşlenen veri, yüzünüzün konumunu/şeklini
+      tanımlayan geçici sayısal noktalardan (landmark koordinatları) ibarettir — fotoğraf,
+      video veya tanımlanabilir bir biyometrik şablon değildir.</p>
+      <ul>
+        <li><b>Ne toplanır:</b> Yalnızca canlı kamera önizlemesindeki yüz landmark
+        koordinatları; maske/filtre görselinin yüzünüze doğru konumda oturmasını sağlamak
+        içindir.</li>
+        <li><b>Nerede işlenir:</b> Tamamen cihazınızda, çevrimdışı — hiçbir sunucuya
+        gönderilmez.</li>
+        <li><b>Saklama süresi:</b> Sıfır. Her kamera karesinin landmark verisi işlendikten
+        hemen sonra (milisaniyeler içinde) bellekten silinir; diske, veritabanına veya
+        herhangi bir dosyaya yazılmaz.</li>
+        <li><b>Paylaşım:</b> Hiçbir üçüncü tarafla paylaşılmaz — çünkü hiçbir yerde
+        saklanmaz.</li>
+        <li><b>Silme:</b> Saklanmadığı için ayrıca silinecek bir yüz verisi yoktur; kamera
+        kapatıldığında/uygulamadan çıkıldığında işlem zaten sona ermiştir.</li>
+      </ul>
 
       <h2>İzinler</h2>
       <ul>
@@ -109,7 +125,7 @@
   <!-- ================= ENGLISH ================= -->
   <section id="en">
     <h1>Privacy Policy</h1>
-    <div class="muted">Last updated: August 16, 2026</div>
+    <div class="muted">Last updated: September 19, 2026</div>
 
     <div class="card tldr">
       In short: Klikaboo <b>does not collect, store, or share any personal data.</b>
@@ -135,8 +151,23 @@
       </ul>
 
       <h2>Face detection (AR filters)</h2>
-      <p>AR face filters use on-device face-detection technology. Face data is processed only
-      in the moment, on the device; it is <b>never stored or sent anywhere.</b></p>
+      <p>AR face filters (masks) use on-device face-landmark detection technology (MediaPipe
+      Face Mesh). The data this technology processes is a set of temporary numeric points
+      (landmark coordinates) describing the position/shape of your face — not a photo, video,
+      or an identifiable biometric template.</p>
+      <ul>
+        <li><b>What is collected:</b> Only the face-landmark coordinates from the live camera
+        preview, used to position the mask/filter graphic correctly on your face.</li>
+        <li><b>Where it is processed:</b> Entirely on your device, offline — it is never sent
+        to any server.</li>
+        <li><b>Retention:</b> None. Each camera frame's landmark data is discarded from
+        memory immediately after processing (within milliseconds) — it is never written to
+        disk, a database, or any file.</li>
+        <li><b>Sharing:</b> Never shared with any third party — because it is never stored
+        anywhere to begin with.</li>
+        <li><b>Deletion:</b> Since nothing is retained, there is no face data left to delete;
+        processing ends as soon as the camera closes or the app is exited.</li>
+      </ul>
 
       <h2>Permissions</h2>
       <ul>
